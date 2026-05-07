@@ -23,14 +23,13 @@
         <div class="header-content">
             <p class="profile-desc">
                 สัมผัสประสบการณ์การเลือกซื้อเฟอร์นิเจอร์แบบใหม่ด้วยระบบ <strong>3D Visualization</strong> 
-                ที่จะช่วยให้คุณเห็นภาพเฟอร์นิเจอร์จริงในบ้านของคุณก่อนการตัดสินใจซื้อ 
-                (แตะที่สินค้าเพื่อโหลดโมเดล 3D)
+                ที่จะช่วยให้คุณเห็นภาพเฟอร์นิเจอร์จริงในบ้านของคุณก่อนการตัดสินใจซื้อ
             </p>
             <div class="skills-grid">
                 <span class="skill-tag">3D Interaction</span>
                 <span class="skill-tag">Augmented Reality (AR)</span>
                 <span class="skill-tag">Space Planning</span>
-                <span class="skill-tag">Lightweight Mode</span>
+                <span class="skill-tag">Optimized Mode</span>
             </div>
         </div>
     </header>
@@ -48,17 +47,13 @@
         <!-- Living Room -->
         <section class="work-item" data-category="living-room">
             <div class="model-box">
-                <model-viewer id="m1" src="3D/livingroom/boston_chairs_table_pack.glb" ios-src="3D/livingroom/Boston_chairs_table_pack.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m1" src="3D/livingroom/boston_chairs_table_pack.glb" ios-src="3D/livingroom/Boston_chairs_table_pack.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Boston Chairs & Table Pack</h3><p>ชุดโต๊ะและเก้าอี้สไตล์คลาสสิกสำหรับห้องนั่งเล่น</p><button class="ar-launch-btn" onclick="triggerAR('m1')">View in AR 🚀</button></div>
         </section>
         <section class="work-item" data-category="living-room">
             <div class="model-box">
-                <model-viewer id="m2" src="3D/livingroom/modern_chandelier.glb" ios-src="3D/livingroom/Modern_Chandelier.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m2" src="3D/livingroom/modern_chandelier.glb" ios-src="3D/livingroom/Modern_Chandelier.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Modern Chandelier</h3><p>โคมไฟระย้าดีไซน์ทันสมัย เพิ่มความหรูหราให้บ้านคุณ</p><button class="ar-launch-btn" onclick="triggerAR('m2')">View in AR 🚀</button></div>
         </section>
@@ -66,17 +61,13 @@
         <!-- Bedroom -->
         <section class="work-item" data-category="bedroom">
             <div class="model-box">
-                <model-viewer id="m3" src="3D/bedroom/bed__circular.glb" ios-src="3D/bedroom/Bed__Circular.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m3" src="3D/bedroom/bed__circular.glb" ios-src="3D/bedroom/Bed__Circular.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Circular Bed</h3><p>เตียงนอนทรงกลมดีไซน์เอกลักษณ์</p><button class="ar-launch-btn" onclick="triggerAR('m3')">View in AR 🚀</button></div>
         </section>
         <section class="work-item" data-category="bedroom">
             <div class="model-box">
-                <model-viewer id="m4" src="3D/bedroom/furniture__no-13.glb" ios-src="3D/bedroom/Furniture__No-13.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m4" src="3D/bedroom/furniture__no-13.glb" ios-src="3D/bedroom/Furniture__No-13.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Modern Wardrobe</h3><p>ตู้เสื้อผ้าดีไซน์โมเดิร์น พื้นที่เก็บของกว้างขวาง</p><button class="ar-launch-btn" onclick="triggerAR('m4')">View in AR 🚀</button></div>
         </section>
@@ -84,17 +75,13 @@
         <!-- Dining Room -->
         <section class="work-item" data-category="dining-room">
             <div class="model-box">
-                <model-viewer id="m5" src="3D/diningroom/dining_table.glb" ios-src="3D/diningroom/Dining_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m5" src="3D/diningroom/dining_table.glb" ios-src="3D/diningroom/Dining_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Dining Table</h3><p>โต๊ะทานอาหารสไตล์โมเดิร์น แข็งแรงทนทาน</p><button class="ar-launch-btn" onclick="triggerAR('m5')">View in AR 🚀</button></div>
         </section>
         <section class="work-item" data-category="dining-room">
             <div class="model-box">
-                <model-viewer id="m6" src="3D/diningroom/set_of_glass.glb" ios-src="3D/diningroom/Set_of_glass.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m6" src="3D/diningroom/set_of_glass.glb" ios-src="3D/diningroom/Set_of_glass.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Set of Glass</h3><p>ชุดแก้วน้ำคริสตัล เพิ่มสีสันให้โต๊ะอาหาร</p><button class="ar-launch-btn" onclick="triggerAR('m6')">View in AR 🚀</button></div>
         </section>
@@ -102,17 +89,13 @@
         <!-- Office -->
         <section class="work-item" data-category="office">
             <div class="model-box">
-                <model-viewer id="m7" src="3D/office/office_desk.glb" ios-src="3D/office/Office_Desk.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m7" src="3D/office/office_desk.glb" ios-src="3D/office/Office_Desk.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Office Desk</h3><p>โต๊ะทำงานดีไซน์เรียบเท่ ช่วยให้การทำงานมีประสิทธิภาพ</p><button class="ar-launch-btn" onclick="triggerAR('m7')">View in AR 🚀</button></div>
         </section>
         <section class="work-item" data-category="office">
             <div class="model-box">
-                <model-viewer id="m8" src="3D/office/office_desk_7_mb.glb" ios-src="3D/office/Office_Desk_7_MB.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m8" src="3D/office/office_desk_7_mb.glb" ios-src="3D/office/Office_Desk_7_MB.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Compact Office Desk</h3><p>โต๊ะทำงานขนาดกะทัดรัด เหมาะสำหรับพื้นที่จำกัด</p><button class="ar-launch-btn" onclick="triggerAR('m8')">View in AR 🚀</button></div>
         </section>
@@ -120,17 +103,13 @@
         <!-- Outdoor -->
         <section class="work-item" data-category="outdoor">
             <div class="model-box">
-                <model-viewer id="m9" src="3D/outdoor/outdoor_hanging_lounge_chair.glb" ios-src="3D/outdoor/Outdoor_Hanging_Lounge_Chair.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m9" src="3D/outdoor/outdoor_hanging_lounge_chair.glb" ios-src="3D/outdoor/Outdoor_Hanging_Lounge_Chair.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Hanging Lounge Chair</h3><p>เก้าอี้แขวนพักผ่อนหย่อนใจ เพิ่มบรรยากาศในสวน</p><button class="ar-launch-btn" onclick="triggerAR('m9')">View in AR 🚀</button></div>
         </section>
         <section class="work-item" data-category="outdoor">
             <div class="model-box">
-                <model-viewer id="m10" src="3D/outdoor/outdoor_table.glb" ios-src="3D/outdoor/Outdoor_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" loading="lazy" reveal="interaction" style="width: 100%; height: 100%;">
-                    <div slot="poster" class="model-poster"><span>แตะเพื่อดู 3D</span></div>
-                </model-viewer>
+                <model-viewer id="m10" src="3D/outdoor/outdoor_table.glb" ios-src="3D/outdoor/Outdoor_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
             </div>
             <div class="work-info"><h3>Outdoor Table</h3><p>โต๊ะสนามดีไซน์เรียบง่าย เหมาะสำหรับงานปาร์ตี้กลางแจ้ง</p><button class="ar-launch-btn" onclick="triggerAR('m10')">View in AR 🚀</button></div>
         </section>
@@ -147,7 +126,7 @@
         const buttons = document.querySelectorAll('.filter-btn');
 
         buttons.forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
+        if (event) event.target.classList.add('active');
 
         items.forEach(item => {
             if (category === 'all' || item.getAttribute('data-category') === category) {
