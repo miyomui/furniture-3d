@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeHome 3D | Furniture Selection Helper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+<div class="desktop-wrapper">
+    <header class="main-header">
+        <div class="header-banner">
+            <img src="images/header.png" alt="LuxeHome 3D Header" class="header-img">
+            <div class="header-overlay">
+                <h1 class="brand-title">LuxeHome 3D</h1>
+                <p class="brand-sub">เครื่องมือช่วยตัดสินใจเลือกซื้อเฟอร์นิเจอร์</p>
+            </div>
+        </div>
+        
+        <div class="header-content">
+            <p class="profile-desc">
+                สัมผัสประสบการณ์การเลือกซื้อเฟอร์นิเจอร์แบบใหม่ด้วยระบบ <strong>3D Visualization</strong> 
+                ที่จะช่วยให้คุณเห็นภาพเฟอร์นิเจอร์จริงในพื้นที่ของคุณก่อนการตัดสินใจซื้อ 
+                เราคัดสรรดีไซน์ที่ทันสมัยและคุณภาพเยี่ยมมาให้คุณเลือกสรร
+            </p>
+            <div class="skills-grid">
+                <span class="skill-tag">3D Interaction</span>
+                <span class="skill-tag">Augmented Reality (AR)</span>
+                <span class="skill-tag">Space Planning</span>
+                <span class="skill-tag">Expert Support</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="filter-nav">
+        <button class="filter-btn active" onclick="filterWork('all')">All Collection</button>
+        <button class="filter-btn" onclick="filterWork('living-room')">Living Room</button>
+        <button class="filter-btn" onclick="filterWork('bedroom')">Bedroom</button>
+        <button class="filter-btn" onclick="filterWork('dining-room')">Dining Room</button>
+        <button class="filter-btn" onclick="filterWork('office')">Office</button>
+        <button class="filter-btn" onclick="filterWork('outdoor')">Outdoor</button>
+    </nav>
+
+    <main class="work-grid">
+        <!-- Living Room -->
+        <section class="work-item" data-category="living-room">
+            <div class="model-box">
+                <model-viewer id="m1" src="3D/livingroom/boston_chairs_table_pack.glb" ios-src="3D/livingroom/Boston_chairs_table_pack.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Boston Chairs & Table Pack</h3><p>ชุดโต๊ะและเก้าอี้สไตล์คลาสสิกสำหรับห้องนั่งเล่น</p><button class="ar-launch-btn" onclick="triggerAR('m1')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="living-room">
+            <div class="model-box">
+                <model-viewer id="m2" src="3D/livingroom/modern_chandelier.glb" ios-src="3D/livingroom/Modern_Chandelier.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Modern Chandelier</h3><p>โคมไฟระย้าดีไซน์ทันสมัย เพิ่มความหรูหราให้บ้านคุณ</p><button class="ar-launch-btn" onclick="triggerAR('m2')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="living-room">
+            <div class="model-box">
+                <model-viewer id="m3" src="3D/livingroom/livingroom_lamp_light.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Living Room Lamp</h3><p>โคมไฟตั้งพื้นดีไซน์เรียบง่าย ให้แสงสว่างที่อบอุ่น</p><button class="ar-launch-btn" onclick="triggerAR('m3')">View in AR 🚀</button></div>
+        </section>
+
+        <!-- Bedroom -->
+        <section class="work-item" data-category="bedroom">
+            <div class="model-box">
+                <model-viewer id="m4" src="3D/bedroom/bed__circular.glb" ios-src="3D/bedroom/Bed__Circular.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Circular Bed</h3><p>เตียงนอนทรงกลมดีไซน์เอกลักษณ์ เพื่อการพักผ่อนที่เหนือระดับ</p><button class="ar-launch-btn" onclick="triggerAR('m4')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="bedroom">
+            <div class="model-box">
+                <model-viewer id="m5" src="3D/bedroom/furniture__no-13.glb" ios-src="3D/bedroom/Furniture__No-13.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Modern Wardrobe</h3><p>ตู้เสื้อผ้าดีไซน์โมเดิร์น พื้นที่เก็บของกว้างขวาง</p><button class="ar-launch-btn" onclick="triggerAR('m5')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="bedroom">
+            <div class="model-box">
+                <model-viewer id="m6" src="3D/bedroom/realistic_bed_3d_model.glb" ios-src="3D/bedroom/Realistic_Bed_3D_Model.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Realistic Bed</h3><p>เตียงนอนพรีเมียม ให้ความรู้สึกเหมือนจริงในทุกมุมมอง</p><button class="ar-launch-btn" onclick="triggerAR('m6')">View in AR 🚀</button></div>
+        </section>
+
+        <!-- Dining Room -->
+        <section class="work-item" data-category="dining-room">
+            <div class="model-box">
+                <model-viewer id="m7" src="3D/diningroom/clarinetto_1k_f82eb1e4-d906-417f-bd66-ddf428da82.glb" ios-src="3D/diningroom/clarinetto_1K_f82eb1e4-d906-417f-bd66-ddf428da8.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Clarinetto Chair</h3><p>เก้าอี้ทานอาหารดีไซน์หรูหรา นั่งสบาย</p><button class="ar-launch-btn" onclick="triggerAR('m7')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="dining-room">
+            <div class="model-box">
+                <model-viewer id="m8" src="3D/diningroom/dining_table.glb" ios-src="3D/diningroom/Dining_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Dining Table</h3><p>โต๊ะทานอาหารสไตล์โมเดิร์น แข็งแรงทนทาน</p><button class="ar-launch-btn" onclick="triggerAR('m8')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="dining-room">
+            <div class="model-box">
+                <model-viewer id="m9" src="3D/diningroom/set_of_glass.glb" ios-src="3D/diningroom/Set_of_glass.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Set of Glass</h3><p>ชุดแก้วน้ำคริสตัล เพิ่มสีสันให้โต๊ะอาหาร</p><button class="ar-launch-btn" onclick="triggerAR('m9')">View in AR 🚀</button></div>
+        </section>
+
+        <!-- Office -->
+        <section class="work-item" data-category="office">
+            <div class="model-box">
+                <model-viewer id="m10" src="3D/office/office_chair.glb" ios-src="3D/office/Office_Chair.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Office Chair</h3><p>เก้าอี้ทำงานเพื่อสุขภาพ รองรับสรีระได้ดี</p><button class="ar-launch-btn" onclick="triggerAR('m10')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="office">
+            <div class="model-box">
+                <model-viewer id="m11" src="3D/office/office_desk.glb" ios-src="3D/office/Office_Desk.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Office Desk</h3><p>โต๊ะทำงานดีไซน์เรียบเท่ ช่วยให้การทำงานมีประสิทธิภาพ</p><button class="ar-launch-btn" onclick="triggerAR('m11')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="office">
+            <div class="model-box">
+                <model-viewer id="m12" src="3D/office/office_desk_7_mb.glb" ios-src="3D/office/Office_Desk_7_MB.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Compact Office Desk</h3><p>โต๊ะทำงานขนาดกะทัดรัด เหมาะสำหรับพื้นที่จำกัด</p><button class="ar-launch-btn" onclick="triggerAR('m12')">View in AR 🚀</button></div>
+        </section>
+
+        <!-- Outdoor -->
+        <section class="work-item" data-category="outdoor">
+            <div class="model-box">
+                <model-viewer id="m13" src="3D/outdoor/furniture_outdoor_and_coffee_table.glb" ios-src="3D/outdoor/Furniture_outdoor_and_coffee_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Outdoor Furniture Set</h3><p>ชุดเฟอร์นิเจอร์สนาม ทนทานต่อทุกสภาวะอากาศ</p><button class="ar-launch-btn" onclick="triggerAR('m13')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="outdoor">
+            <div class="model-box">
+                <model-viewer id="m14" src="3D/outdoor/outdoor_hanging_lounge_chair.glb" ios-src="3D/outdoor/Outdoor_Hanging_Lounge_Chair.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Hanging Lounge Chair</h3><p>เก้าอี้แขวนพักผ่อนหย่อนใจ เพิ่มบรรยากาศในสวน</p><button class="ar-launch-btn" onclick="triggerAR('m14')">View in AR 🚀</button></div>
+        </section>
+        <section class="work-item" data-category="outdoor">
+            <div class="model-box">
+                <model-viewer id="m15" src="3D/outdoor/outdoor_table.glb" ios-src="3D/outdoor/Outdoor_table.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls autoplay auto-rotate shadow-intensity="1" environment-image="neutral" loading="eager" style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="work-info"><h3>Outdoor Table</h3><p>โต๊ะสนามดีไซน์เรียบง่าย เหมาะสำหรับงานปาร์ตี้กลางแจ้ง</p><button class="ar-launch-btn" onclick="triggerAR('m15')">View in AR 🚀</button></div>
+        </section>
+    </main>
+
+    <footer class="desktop-footer">
+        <p>© 2026 LuxeHome 3D | <a href="#">Contact Us</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</div>
+
+<script>
+function filterWork(category) {
+    const items = document.querySelectorAll('.work-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    event.target.classList.add('active');
+
+    items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+            item.style.display = 'block';
+            setTimeout(() => item.style.opacity = '1', 10);
+        } else {
+            item.style.opacity = '0';
+            setTimeout(() => item.style.display = 'none', 300);
+        }
+    });
+}
+function triggerAR(id) {
+    const viewer = document.getElementById(id);
+    if (viewer && viewer.activateAR) { viewer.activateAR(); }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Ignore Gemini/AI specific files
+.gemini/
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+*.log
